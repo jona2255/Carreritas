@@ -1,4 +1,4 @@
-package com.company.menus;
+package com.company.view;
 
 public class MenuPlay {
 

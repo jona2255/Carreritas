@@ -1,4 +1,4 @@
-package com.company.vehicles;
+package com.company.model;
 
 public abstract class Vehicle {
 }

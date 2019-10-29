@@ -1,8 +1,6 @@
-package com.company.menus;
+package com.company.view;
 
-import com.company.Clasification;
-import com.company.Play;
-import org.w3c.dom.ls.LSOutput;
+import com.company.controller.Clasification;
 
 import java.util.Scanner;
 
