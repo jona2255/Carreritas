@@ -43,7 +43,6 @@ public class Menu {
                     break;
                 case 4:
                     System.out.println("Adios");
-
                     break;
                 default:
                     System.out.println("Opción no disponible, elige otra vez");
