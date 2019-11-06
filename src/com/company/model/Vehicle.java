@@ -1,12 +1,12 @@
-package com.comany.model;
+package com.company.model;
 
 public abstract class Vehicle {
-    int rueda;
+    String tipo;
 
-    public void setRueda(int rueda) {
-        this.rueda = rueda;
+    public void setRueda(String tipo) {
+        this.tipo = tipo;
     }
-    public int getRueda() {
-        return rueda;
+    public String getTipo() {
+        return tipo;
     }
 }
