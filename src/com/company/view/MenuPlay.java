@@ -1,8 +1,8 @@
 package com.company.view;
 
 
-import com.company.controller.Game;
 import com.company.model.Car;
+import com.company.model.Vehicle;
 
 import java.util.Scanner;
 
