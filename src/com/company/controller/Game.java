@@ -7,8 +7,9 @@ public class Game {
 
 //    El inicio del fin (donde llamamos a todo) Aqui iniciamos y finalizamos
 
-    public void playGame(){
+    public void play(){
         Menu menu = new Menu();
         menu.show();
+        menu.chose();
     }
 }

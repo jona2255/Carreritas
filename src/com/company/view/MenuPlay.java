@@ -1,8 +1,8 @@
 package com.company.view;
 
 
+import com.company.controller.Game;
 import com.company.model.Car;
-import com.company.model.Vehicle;
 
 import java.util.Scanner;
 
@@ -17,7 +17,9 @@ public class MenuPlay {
                 "\n1) Bicicleta " +
                 "\n2) Coche " +
                 "\n3) Camión " +
-                "\n4) Moto ");
+                "\n4) Moto " +
+                "\n5) Volver al menu principal." +
+                "\n0) Salir de todo el programa.");
 
         int option = sc.nextInt();
 
