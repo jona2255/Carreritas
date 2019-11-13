@@ -29,22 +29,26 @@ public class MenuVehicle {
         do {
             switch (option) {
                 case 1:
-                    vehicle.getCycle();
+                    vehicle.setCycle("bici");
+                    vehicle.getVehicle();
                     //bici
                     salir = true;
                     break;
                 case 2:
-                    vehicle.getCar();
+                    vehicle.setCar("coche");
+                    vehicle.getVehicle();
                     //coche
                     salir = true;
                     break;
                 case 3:
-                    vehicle.getTruck();
+                    vehicle.setTruck("camion");
+                    vehicle.getVehicle();
                     //camión
                     salir = true;
                     break;
                 case 4:
-                    vehicle.getMoto();
+                    vehicle.setMoto("moto");
+                    vehicle.getVehicle();
                     //moto
                     salir = true;
                     break;
