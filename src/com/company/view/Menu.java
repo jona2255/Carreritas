@@ -26,7 +26,7 @@ public class Menu {
 
         MenuCompetition menuCompetition = new MenuCompetition();
         Clasification clasification = new Clasification();
-        MenuPlay menuPlay = new MenuPlay();
+        MenuVehicle menuVehicle = new MenuVehicle();
 
         int valor = sc.nextInt();
 
@@ -40,7 +40,7 @@ public class Menu {
                     clasification.show();
                     break;
                 case 3:
-                    menuPlay.selectVehicle();
+                    menuVehicle.selectVehicle();
                     break;
                 case 4:
                     System.out.println("Adios");
