@@ -8,7 +8,6 @@ public class MenuCompetition {
         System.out.println("Elige el nombre del participante");
 
 
-
         System.out.println("Elige la cantidad de participantes");
 
 
