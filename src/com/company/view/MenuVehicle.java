@@ -2,21 +2,23 @@ package com.company.view;
 
 import com.company.controller.Play;
 import com.company.model.Car;
+import com.company.model.Vehicle;
 
 import java.util.Scanner;
 
 public class MenuVehicle {
 
-    Car car = new Car();
     Menu menu = new Menu();
-    Play play = new Play();
+    Vehicle vehicle = new Vehicle();
 
     Scanner sc = new Scanner(System.in);
 
 
-    Boolean salir = false;
+
 
     public void selectVehicle() {
+        Boolean salir = false;
+
         System.out.println("Elige con que vehiculo deseas participar: " +
                 "\n1) Bicicleta " +
                 "\n2) Coche " +
@@ -27,23 +29,22 @@ public class MenuVehicle {
         do {
             switch (option) {
                 case 1:
-                    System.out.println("Vehiculo: Bicicleta");
+                    vehicle.getCycle();
                     //bici
                     salir = true;
-
                     break;
                 case 2:
-                    System.out.println("Vehiculo: Coche");
+                    vehicle.getCar();
                     //coche
                     salir = true;
                     break;
                 case 3:
-                    System.out.println("Vehiculo: Camión");
+                    vehicle.getTruck();
                     //camión
                     salir = true;
                     break;
                 case 4:
-                    System.out.println("Vehiculo: Moto");
+                    vehicle.getMoto();
                     //moto
                     salir = true;
                     break;

@@ -1,6 +1,7 @@
 package com.company.view;
 
 import com.company.controller.Clasification;
+import com.company.controller.Play;
 
 import java.util.Scanner;
 
@@ -27,6 +28,7 @@ public class Menu {
         MenuCompetition menuCompetition = new MenuCompetition();
         Clasification clasification = new Clasification();
         MenuVehicle menuVehicle = new MenuVehicle();
+        Play play = new Play();
 
         int valor = sc.nextInt();
 
@@ -41,6 +43,7 @@ public class Menu {
                     break;
                 case 3:
                     menuVehicle.selectVehicle();
+
                     break;
                 case 4:
                     System.out.println("Adios");
