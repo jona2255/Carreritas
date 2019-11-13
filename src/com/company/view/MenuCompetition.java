@@ -15,10 +15,6 @@ public class MenuCompetition {
 
         System.out.println("Elige la cantidad de circuitos del campeonato");
 
-
-
-
-
     }
 
 
