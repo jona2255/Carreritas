@@ -7,27 +7,16 @@ import java.util.Scanner;
 
 public class Menu {
 
-
-    // 2- Resultats/Palmarès/ClassificacióGeneral -> Clasification
-    // 3- Jugar -> Play
-    // 4- Acabar
-
-
-    public void show(){
-
-        System.out.println("1- Configuració de la competició\n2- Resultats/Palmarès/ClassificacióGeneral\n3- Jugar\n4- Finalizar");
-
-
-    }
+    // 2- Clasification
 
     Scanner sc = new Scanner(System.in);
 
     public void chose(){
 
+        System.out.println("1- Configuració de la competició\n2- Resultats/Palmarès/ClassificacióGeneral\n3- Jugar\n4- Finalizar");
 
         MenuCompetition menuCompetition = new MenuCompetition();
         Clasification clasification = new Clasification();
-        MenuVehicle menuVehicle = new MenuVehicle();
         Play play = new Play();
 
         int valor = sc.nextInt();
@@ -42,8 +31,7 @@ public class Menu {
                     clasification.show();
                     break;
                 case 3:
-                    menuVehicle.selectVehicle();
-
+                   play.partida();
                     break;
                 case 4:
                     System.out.println("Adios");

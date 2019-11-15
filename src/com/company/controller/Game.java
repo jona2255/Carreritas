@@ -9,7 +9,6 @@ public class Game {
 
     public void play(){
         Menu menu = new Menu();
-        menu.show();
         menu.chose();
     }
 }
