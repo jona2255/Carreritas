@@ -1,11 +1,22 @@
 package com.company.model;
 
-public class Competitor {
+public class Competitor{
 
     String nombre;
-    int puntos;
-    float tiempo;
     String vehiculo;
+    int puntos = 0;
+    double tiempo;
+
+
+    public Competitor(String nombre, String vehiculo) {
+        this.nombre = nombre;
+        this.vehiculo = vehiculo;
+    }
+
+    public Competitor(String s) {
+        this.nombre = s;
+    }
+
 
     public String getVehiculo() {
         return vehiculo;
@@ -19,10 +30,6 @@ public class Competitor {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public int getPuntos() {
         return puntos;
     }
@@ -31,11 +38,12 @@ public class Competitor {
         this.puntos = puntos;
     }
 
-    public float getTiempo() {
+    public double getTiempo() {
         return tiempo;
     }
 
-    public void setTiempo(float tiempo) {
+    public void setTiempo(double tiempo) {
         this.tiempo = tiempo;
     }
+
 }

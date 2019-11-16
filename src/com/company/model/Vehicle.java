@@ -4,8 +4,9 @@ public class Vehicle {
 
     String vehicle;
 
-    public void getVehicle() {
+    public String getVehicle() {
         System.out.println("Tipo de vehiculo seleccionado: " + vehicle);
+        return vehicle;
     }
 
     public void setCar(String car) {

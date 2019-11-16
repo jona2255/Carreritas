@@ -1,7 +1,5 @@
 package com.company.view;
 
-import com.company.controller.Play;
-import com.company.model.Car;
 import com.company.model.Vehicle;
 
 import java.util.Scanner;
@@ -13,8 +11,10 @@ public class MenuVehicle {
 
     Scanner sc = new Scanner(System.in);
 
-    public void selectVehicle() {
+    public String selectVehicle() {
         Boolean salir = false;
+        
+        String vehiculo = "";
 
         System.out.println("Elige con que vehiculo deseas participar: " +
                 "\n1) Bicicleta " +
@@ -28,25 +28,25 @@ public class MenuVehicle {
                 case 1:
                     //bici
                     vehicle.setCycle("bici");
-                    vehicle.getVehicle();
+                    vehiculo = vehicle.getVehicle();
                     salir = true;
                     break;
                 case 2:
                     //coche
                     vehicle.setCar("coche");
-                    vehicle.getVehicle();
+                    vehiculo = vehicle.getVehicle();
                     salir = true;
                     break;
                 case 3:
                     //camión
                     vehicle.setTruck("camion");
-                    vehicle.getVehicle();
+                    vehiculo = vehicle.getVehicle();
                     salir = true;
                     break;
                 case 4:
                     //moto
                     vehicle.setMoto("moto");
-                    vehicle.getVehicle();
+                    vehiculo = vehicle.getVehicle();
                     salir = true;
                     break;
                 default:
@@ -56,6 +56,6 @@ public class MenuVehicle {
             }
         } while (salir == false) ;
 
-        menu.chose();
+        return vehiculo;
     }
 }
